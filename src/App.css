@@ -1,12 +1,272 @@
-.App {
+@import url('https://fonts.google.com/specimen/Inter');
+.dark{
+  background-image: linear-gradient(to bottom, hsl(232, 19%, 15%) 30%, hsl(230, 17%, 14%) 0%);
+  height: 100%;
+  width: 100%;
+}
+.light{
+  background:linear-gradient(to bottom, hsl(225, 100%, 98%) 30%, hsl(0, 0%, 100%) 0%);
+  height: 100vh;
+  width: 100vh;
+}
+.titlelight {
+ color: hsl(230, 17%, 14%);
+ font-family: 'Inter';
+ font-weight: 400;
+ font-size: x-large;
+}
+.titledark {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: x-large;
+ }
+.followerslight {
+  color: hsl(228, 12%, 44%);
+  font-family: sans-serif;
+  font-weight: 700;
+ }
+ .followersdark {
+  color: hsl(228, 34%, 66%);
+  font-family: sans-serif;
+  font-weight: 700;
+ }
+ .modearea{
+  margin-left: 15rem;
+  margin-top: 1rem;
+  
+ }
+ .modelight{
+  color: hsl(228, 12%, 44%);
+  font-family: sans-serif;
+  font-weight: 700;
+  display: inline-block;
+ }
+ .modedark{
+  color: hsl(228, 34%, 66%);
+  font-family: sans-serif;
+  font-weight: 700;
+  display: inline-block;
+ }
+.togglelight{
+border-radius: 160px;
+background-image: linear-gradient( to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+transition: 0.5s;
+width: 36px;
+height: 18px;
+display: inline-block;
+margin-left: 0.5rem;
+
+}
+.toggledark{
+  border-radius: 160px;
+  background-image: linear-gradient( to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+  transition: 0.5s;
+  width: 36px;
+  height: 18px;
+  display: inline-block;
+  margin-left: 0.5rem;
+  
+  }
+.indicatordark{
+position: absolute;
+border-radius: 50%;
+transform:scale(0.9);
+height: 18px;
+width: 18px;
+background-color: hsl(232, 19%, 15%);
+transition: 0.5s;
+cursor: pointer;
+
+}
+.indicatorlight{
+  position: absolute;
+  border-radius: 50%;
+  transform:scale(0.9);
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-left: 1.1rem;
+  }
+.maincardlight{
+  height: 12rem !important;
+  margin-top: 2rem;
+  background-color: hsl(227, 47%, 96%) !important;
   text-align: center;
+ 
+
+}
+.maincarddark{
+  height: 12rem !important;
+  margin-top: 2rem;
+  background-color: hsl(228, 28%, 20%) !important;
+  text-align: center;
+ 
+
+}
+.numberlight{
+  font-family: 'Inter';
+  font-weight: 1000;
+  font-size: 45px;
+  color: hsl(230, 17%, 14%);
+  margin: 0rem;
+  padding: 0rem;
+  
+}
+.numberdark{
+  font-family: 'Inter';
+  font-weight: 700;
+  color:hsl(0, 0%, 100%);
+  font-size: 45px;
+  margin: 0rem;
+  padding: 0rem;
+}
+.fnumberlight{
+  font-family: 'Inter';
+  font-weight: 400;
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 11px;
+  color:  hsl(228, 12%, 44%);
+}
+.fnumberdark{
+  font-family: 'Inter';
+  font-weight: 400;
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 11px;
+  color:  hsl(228, 34%, 66%);
+}
+.trend{
+  font-family: sans-serif;
+  margin-top: 1.4rem;
+  font-weight: 700;
+  font-size: smaller;
+}
+.up{
+  color:green ;
+}
+.down{
+  color: red;
+}
+.facebook{
+  border: none !important;
+  border-top:  5px solid  hsl(208, 92%, 53%) !important;
+ 
+}
+.youtube{
+  border: none !important;
+  border-top:  5px solid  hsl(348, 97%, 39%) !important;
+ 
+}
+.twitter{
+  border: none !important;
+  border-top:  5px solid hsl(203, 89%, 53%) !important;
+ 
+}
+.instagram{
+  border-width: 0  !important;
+  border-top: 5px solid !important;
+  border-image: linear-gradient(to right, hsl(37, 97%, 70%) ,  hsl(329, 70%, 58%)) 1 !important; 
+ 
+}
+.headerlight{
+  color:  hsl(228, 12%, 44%);
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0;
+  font-family: 'Inter';
+}
+.headerdark{
+  color:  hsl(228, 34%, 66%);
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.middletextlight{
+  margin-top: 3rem ;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+  font-size: 20px;
 }
+.middletextdark{
+  margin-top: 3rem ;
+  font-family: sans-serif;
+  font-weight: 700;
+  color:hsl(0, 0%, 100%);
+  font-size: 20px;
+}
+.smallcardlight{
+  height: 7rem !important;
+  margin-top: 1rem;
+  background-color: hsl(227, 47%, 96%) !important;
+}
+.smallcarddark{
+  height: 7rem !important;
+  margin-top: 1rem;
+  background-color: hsl(228, 28%, 20%) !important;
+}
+.upleftrowlight{
+  color:  hsl(228, 12%, 44%);
+  font-weight: 700;
+  font-family: 'Inter';
 
+  margin-left: 0.4rem;
+}
+.upleftrowdark{
+  color:  hsl(228, 34%, 66%);
+  font-weight: 700;
+  font-family: 'Inter';
+  margin-left: 0.4rem;
+ 
+}
+.uprightrowlight{
+  position: absolute;
+  left: 80%;
+  color:  hsl(228, 12%, 44%);
+}
+.uprightrowdark{
+  position: absolute;
+  left: 80%;
+  color:  hsl(228, 34%, 66%);
+}
+.downleftrowlight{
+  margin-left: 0.4rem;
+  margin-top: 2rem;
+  font-family: 'Inter';
+  font-weight: 1000;
+  color: hsl(230, 17%, 14%);
+  font-size: 18px;
+ 
+}
+.downleftrowdark{
+  margin-left: 0.4rem;
+  margin-top: 2rem;
+  font-family: 'Inter';
+  font-weight: 700;
+  color:hsl(0, 0%, 100%);
+  font-size: 18px;
+  
+}
+.downrightrowlight{
+  position: absolute;
+  left: 80%;
+  font-size: 10px;
+  margin-top: 2.5rem;
+  font-weight: 700;
+}
+.downrightrowdark{
+  position: absolute;
+  left: 80%;
+  font-size: 10px;
+  margin-top: 2.5rem;
+  font-weight: 700;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
